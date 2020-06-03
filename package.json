@@ -1,0 +1,15 @@
+{
+  "name": "com.wasdstudio.gameflowmanagement",
+  "displayName": "Gameflow Management",
+  "version": "1.0.1",
+  "unity": "2019.3",
+  "description": "Game management for unity.",
+  "keywords": [
+    "ohms",
+    "utilities"
+  ],
+  "category": "utilities",
+  "dependencies": {
+    "com.ohms.utilities": "https://github.com/oms064/Unity-General-Utilities.git"
+  }
+}

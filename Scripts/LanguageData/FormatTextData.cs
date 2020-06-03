@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using LanguageRichTextDictionary = System.Collections.Generic.Dictionary<UnityEngine.SystemLanguage, OhmsLibraries.Localization.RichText>;
+using LanguageRichTextDictionary = System.Collections.Generic.Dictionary<UnityEngine.SystemLanguage, OhmsLibraries.Localization.Data.RichText>;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
-namespace OhmsLibraries.Localization {
+namespace OhmsLibraries.Localization.Data {
     [CreateAssetMenu( menuName = "Language System/Multiline Text Data" )]
     public class FormatTextData : TextData {
 

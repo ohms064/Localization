@@ -7,6 +7,7 @@ using Sirenix.OdinInspector;
 using System.Linq;
 using System.IO;
 using OhmsLibraries.Localization;
+using OhmsLibraries.Localization.Data;
 
 public class LanguageBuildWindow : OdinEditorWindow {
 

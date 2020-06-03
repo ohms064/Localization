@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
 using LanguageSpriteDictionary = System.Collections.Generic.Dictionary<UnityEngine.SystemLanguage, UnityEngine.Sprite>;
-namespace OhmsLibraries.Localization {
+namespace OhmsLibraries.Localization.Data {
     [CreateAssetMenu( menuName = "Language System/Sprite Data" )]
     public class SpriteData : SerializedScriptableObject {
         public static SystemLanguage currentLanguage = SystemLanguage.English, currentDefault = SystemLanguage.English;

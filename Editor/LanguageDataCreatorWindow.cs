@@ -9,6 +9,8 @@ using OhmsLibraries.Localization;
 using Sirenix.Utilities.Editor;
 using System.Linq;
 using TMPro;
+using OhmsLibraries.Localization.Setters;
+using OhmsLibraries.Localization.Data;
 
 public class LanguageDataCreatorWindow : OdinEditorWindow
 {

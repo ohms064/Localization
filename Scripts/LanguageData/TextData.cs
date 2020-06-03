@@ -6,7 +6,7 @@ using UnityEditor;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using LanguageDictionary = System.Collections.Generic.Dictionary<UnityEngine.SystemLanguage, string>;
-namespace OhmsLibraries.Localization {
+namespace OhmsLibraries.Localization.Data {
     [CreateAssetMenu( menuName = "Language System/Text Data" )]
     public class TextData : SerializedScriptableObject {
         public SystemLanguage CurrentLanguage => LanguageManager.Instance.currentLanguage;

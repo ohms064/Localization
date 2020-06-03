@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace OhmsLibraries.Localization {
+using OhmsLibraries.Localization.Data;
+
+namespace OhmsLibraries.Localization.Setter {
     public class AudioSourceSetter : MonoBehaviour {
         public AudioData data;
         private AudioSource source;

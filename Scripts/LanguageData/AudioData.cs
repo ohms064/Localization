@@ -7,7 +7,7 @@ using Sirenix.OdinInspector;
 using UnityEditor;
 #endif
 
-namespace OhmsLibraries.Localization {
+namespace OhmsLibraries.Localization.Data {
     [CreateAssetMenu( menuName = "Language System/Audio Data" )]
     public class AudioData : SerializedScriptableObject {
         public static SystemLanguage CurrentLanguage => LanguageManager.Instance.currentLanguage;

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace OhmsLibraries.Localization {
+namespace OhmsLibraries.Localization.Data {
     public class BaseData<T> : MonoBehaviour {
 
         public static SystemLanguage currentLanguage, currentDefault;

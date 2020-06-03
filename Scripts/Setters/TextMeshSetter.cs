@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Sirenix.OdinInspector;
-namespace OhmsLibraries.Localization {
+using OhmsLibraries.Localization.Data;
+
+namespace OhmsLibraries.Localization.Setters {
     public class TextMeshSetter : LanguageListener {
         [Required, HideInInlineEditors]
         public TextMeshPro meshText;

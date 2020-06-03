@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-namespace OhmsLibraries.Localization {
+using OhmsLibraries.Localization.Data;
+namespace OhmsLibraries.Localization.Setters {
     public class TextUISetter : LanguageListener {
 
         public TextData data;

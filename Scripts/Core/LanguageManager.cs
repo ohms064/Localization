@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using WasdStudio.GameConfig;
+using OhmsLibraries.Localization.Setters;
 
 namespace OhmsLibraries.Localization {
     [DefaultExecutionOrder( -100 )]
@@ -68,15 +69,5 @@ namespace OhmsLibraries.Localization {
 
     }
 
-    public abstract class LanguageListener : MonoBehaviour {
-        public abstract void OnLanauageChanged ();
-
-        protected virtual void OnEnable () {
-            LanguageManager.Instance.Register( this );
-        }
-
-        protected virtual void OnDisable () {
-            LanguageManager.Instance?.Unregister( this );
-        }
-    }
+    
 }
