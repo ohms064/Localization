@@ -1,0 +1,18 @@
+{
+    "name": "LanguageSystem.Editor",
+    "references": [
+        "GUID:9b7f1a308b1a7dd43a1d80e3f3863a4c",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
