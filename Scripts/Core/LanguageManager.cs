@@ -2,15 +2,17 @@
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using UnityEngine;
-using WasdStudio.GameConfig;
 using OhmsLibraries.Localization.Setters;
+using Sirenix.Serialization;
 
 namespace OhmsLibraries.Localization {
     [DefaultExecutionOrder( -100 )]
-    public class LanguageManager : MonoBehaviour {
+    public class LanguageManager : SerializedMonoBehaviour {
         public SystemLanguage currentLanguage = SystemLanguage.English;
         public bool useSystemLanguage;
         public static bool alreadyInitialized = false;
+        [OdinSerialize]
+        private ILanguageObtainer _languageObtainer;
 
         private event System.Action _onLanguageChanged;
 
@@ -35,11 +37,12 @@ namespace OhmsLibraries.Localization {
             //TextData.currentDefault = defaultLanguage;
         }
         private void Start () {
-            if ( useSystemLanguage && !GameConfig.Instance.Language.HasSaveData() ) {
+            if ( _languageObtainer == null ) return;
+            if ( useSystemLanguage && !_languageObtainer.HasSavedLanguage() ) {
                 currentLanguage = Application.systemLanguage;
             }
-            else if ( GameConfig.Instance.Language.HasSaveData() ) {
-                currentLanguage = GameConfig.Instance.Language.SavedData;
+            else if ( _languageObtainer.HasSavedLanguage() ) {
+                currentLanguage = _languageObtainer.GetLanguage();
             }
         }
 
@@ -69,5 +72,5 @@ namespace OhmsLibraries.Localization {
 
     }
 
-    
+
 }
