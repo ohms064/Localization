@@ -6,11 +6,11 @@ namespace OhmsLibraries.Localization.Setters {
     public abstract class LanguageListener : MonoBehaviour {
         public abstract void OnLanauageChanged ();
 
-        protected virtual void OnEnable () {
+        protected virtual void Awake () {
             LanguageManager.Instance.Register( this );
         }
 
-        protected virtual void OnDisable () {
+        protected virtual void OnDestroy () {
             LanguageManager.Instance?.Unregister( this );
         }
     }
