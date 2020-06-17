@@ -38,6 +38,7 @@ namespace OhmsLibraries.Localization {
         }
         private void Start () {
             if ( _languageObtainer == null ) return;
+            Debug.Log( $"Language obtainer present. {_languageObtainer.HasSavedLanguage()}" );
             if ( useSystemLanguage && !_languageObtainer.HasSavedLanguage() ) {
                 currentLanguage = Application.systemLanguage;
             }
